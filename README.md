@@ -8,3 +8,4 @@ A daily planner that allows user to schedule tasks during standard work hours. D
 ## Website
 https://daily-planner-ad.netlify.app/
 ## Screenshot
+![daily-planner-ad netlify app_](https://user-images.githubusercontent.com/103084529/174499106-22397314-60d4-4b6a-829b-545cac5a6b42.png)
