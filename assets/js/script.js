@@ -4,7 +4,6 @@ var currentDate = moment().format("dddd, MMMM Do");
 currentDayE1.innerText=currentDate;
 
 var currentTime = moment().format("hA");
-console.log(currentTime);
 
 function timeColor(){
     switch (currentTime) {
@@ -153,60 +152,68 @@ function timeColor(){
 function saveInputs9(){
     var input = $("#hour9").val().trim();
     localStorage.setItem("9AM", input);
-}
+};
 $("#btn9").on("click",saveInputs9);
 
 function saveInputs10(){
     var input = $("#hour10").val().trim();
     localStorage.setItem("10AM", input);
-}
+};
 $("#btn10").on("click",saveInputs10);
 
 function saveInputs11(){
     var input = $("#hour11").val().trim();
     localStorage.setItem("11AM", input);
-}
+};
 $("#btn11").on("click",saveInputs11);
 
 function saveInputs12(){
     var input = $("#hour12").val().trim();
     localStorage.setItem("12PM", input);
-}
+};
 $("#btn12").on("click",saveInputs12);
 
 function saveInputs1(){
     var input = $("#hour1").val().trim();
     localStorage.setItem("1PM", input);
-}
+};
 $("#btn1").on("click",saveInputs1);
 
 function saveInputs2(){
     var input = $("#hour2").val().trim();
     localStorage.setItem("2PM", input);
-}
+};
 $("#btn2").on("click",saveInputs2);
 
 function saveInputs3(){
     var input = $("#hour3").val().trim();
     localStorage.setItem("3PM", input);
-}
+};
 $("#btn3").on("click",saveInputs3);
 
 function saveInputs4(){
     var input = $("#hour4").val().trim();
     localStorage.setItem("4PM", input);
-}
+};
 $("#btn4").on("click",saveInputs4);
 
 function saveInputs5(){
     var input = $("#hour5").val().trim();
     localStorage.setItem("5PM", input);
-}
+};
 $("#btn5").on("click",saveInputs5);
 
-// function saveBtnHandler() {
-//   var textValue = hour9.value.val().trim();
-//   console.log(textValue);
-// };
+function loadInputs(){
+    $("#hour9").val(localStorage.getItem("9AM"));
+    $("#hour10").val(localStorage.getItem("10AM"));
+    $("#hour11").val(localStorage.getItem("11AM"));
+    $("#hour12").val(localStorage.getItem("12PM"));
+    $("#hour1").val(localStorage.getItem("1PM"));
+    $("#hour2").val(localStorage.getItem("2PM"));
+    $("#hour3").val(localStorage.getItem("3PM"));
+    $("#hour4").val(localStorage.getItem("4PM"));
+    $("#hour5").val(localStorage.getItem("5PM"));
+};
 
 timeColor();
+loadInputs();
