@@ -6,4 +6,5 @@ A daily planner that allows user to schedule tasks during standard work hours. D
 -CSS
 -JavaScript
 ## Website
+https://daily-planner-ad.netlify.app/
 ## Screenshot
